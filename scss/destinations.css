@@ -67,76 +67,6 @@
   color: #db7a4e;
 }
 
-.destination {
-  height: 650px;
-  background-size: cover;
-  background-position: center;
-}
-.destination--hawaii {
-  background-image: url("../assets/images/hawaii.jpg");
-}
-.destination--iceland {
-  background-image: url("../assets/images/iceland.jpg");
-}
-.destination--greece {
-  background-image: url("../assets/images/greece.jpg");
-}
-.destination__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2rem 3rem;
-}
-.destination__title-container {
-  width: 100%;
-}
-.destination__title {
-  font-size: 3.75rem;
-  margin-right: 68vw;
-  color: #fff;
-}
-
-.activity-card {
-  width: 30%;
-  border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
-  transition: transform 0.5s;
-}
-.activity-card:hover {
-  transform: scale(1.1);
-}
-.activity-card__container {
-  display: flex;
-  justify-content: space-around;
-  width: 70%;
-}
-.activity-card__text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  width: 90%;
-  margin: 0 auto;
-  margin-bottom: 30px;
-}
-.activity-card__text-title {
-  border-bottom: 2px solid black;
-}
-.activity-card__list {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-}
-.activity-card__list-item {
-  list-style: none;
-  background-color: #fefaf5;
-  line-height: 40px;
-  margin: 10px;
-}
-
 .footer {
   background-color: #fefaf5;
   height: 12rem;
@@ -212,4 +142,74 @@
 .social__title {
   font-size: 1.4rem;
   margin-bottom: 2.7rem;
-}/*# sourceMappingURL=iceland.css.map */
+}
+
+.destination {
+  height: 650px;
+  background-size: cover;
+  background-position: center;
+}
+.destination--hawaii {
+  background-image: url("../assets/images/hawaii.jpg");
+}
+.destination--iceland {
+  background-image: url("../assets/images/iceland.jpg");
+}
+.destination--greece {
+  background-image: url("../assets/images/greece.jpg");
+}
+.destination__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 3rem;
+}
+.destination__title-container {
+  width: 100%;
+}
+.destination__title {
+  font-size: 3.75rem;
+  margin-right: 68vw;
+  color: #fff;
+}
+
+.activity-card {
+  width: 30%;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  transition: transform 0.5s;
+}
+.activity-card:hover {
+  transform: scale(1.1);
+}
+.activity-card__container {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+}
+.activity-card__text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.activity-card__text-title {
+  border-bottom: 2px solid black;
+}
+.activity-card__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.activity-card__list-item {
+  list-style: none;
+  background-color: #fefaf5;
+  line-height: 40px;
+  margin: 10px;
+}/*# sourceMappingURL=destinations.css.map */
