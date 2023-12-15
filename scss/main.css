@@ -1,0 +1,312 @@
+:root {
+  font-size: 16px;
+  color: #335576;
+  font-weight: 400;
+  font-family: "Verdana", sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.site-container {
+  max-width: 1280px;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  margin: 0 5rem;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-around;
+}
+.nav__item {
+  list-style-type: none;
+  font-size: 0.85rem;
+  margin-right: 1.1rem;
+}
+.nav__link {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.85rem;
+}
+.nav__link--active {
+  color: #db7a4e;
+}
+.nav__link--active:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 0.5rem;
+  border-bottom: 2px solid #db7a4e;
+}
+.nav__link:hover {
+  color: #db7a4e;
+}
+.nav__branding-link {
+  text-decoration: none;
+}
+.nav__branding-text {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #335576;
+  padding: 0;
+}
+.nav__branding-text:hover {
+  color: #db7a4e;
+}
+
+.destination {
+  height: 650px;
+  background-size: cover;
+  background-position: center;
+}
+.destination--hawaii {
+  background-image: url("../assets/images/hawaii.jpg");
+}
+.destination--iceland {
+  background-image: url("../assets/images/iceland.jpg");
+}
+.destination--greece {
+  background-image: url("../assets/images/greece.jpg");
+}
+.destination__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 3rem;
+}
+.destination__title-container {
+  width: 100%;
+}
+.destination__title {
+  font-size: 3.75rem;
+  margin-right: 68vw;
+  color: #fff;
+}
+
+.activity-card {
+  width: 30%;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  transition: transform 0.5s;
+}
+.activity-card:hover {
+  transform: scale(1.1);
+}
+.activity-card__container {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+}
+.activity-card__text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.activity-card__text-title {
+  border-bottom: 2px solid black;
+}
+.activity-card__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.activity-card__list-item {
+  list-style: none;
+  background-color: #fefaf5;
+  line-height: 40px;
+  margin: 10px;
+}
+
+.footer {
+  background-color: #fefaf5;
+  height: 12rem;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__container {
+  margin: 2.5rem 4rem 3rem 13rem;
+  width: 68%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3.75rem;
+  z-index: 99;
+  width: 100%;
+}
+.contact__title {
+  font-size: 1.4rem;
+  margin-bottom: 1.9rem;
+}
+.contact__sub-text {
+  font-size: 0.6rem;
+  color: #db7a4e;
+  text-transform: uppercase;
+}
+.contact__text {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.hours {
+  width: 44%;
+}
+.hours__container {
+  display: flex;
+  flex-direction: column;
+}
+.hours__group {
+  display: flex;
+  justify-content: space-between;
+}
+.hours__details {
+  display: flex;
+  flex-direction: column;
+}
+.hours__title {
+  font-size: 1.4rem;
+}
+.hours__sub-text {
+  font-size: 0.6rem;
+  color: #db7a4e;
+  text-transform: uppercase;
+}
+.hours__text {
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.social__container {
+  display: flex;
+  justify-content: space-between;
+}
+.social__image {
+  height: 1.4rem;
+}
+.social__image:not(last-child) {
+  margin-right: 30px;
+}
+.social__title {
+  font-size: 1.4rem;
+  margin-bottom: 2.7rem;
+}
+
+.hero {
+  display: flex;
+  background-color: #fefaf5;
+}
+.hero__container {
+  margin: 6rem;
+  display: flex;
+  justify-content: space-between;
+}
+.hero__copy {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.hero__title {
+  font-size: 2.25rem;
+}
+.hero__text {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+.hero__graphics {
+  width: 40%;
+}
+.hero__image {
+  width: 100%;
+}
+
+.button {
+  background-color: #db7a4e;
+  padding: 0.5rem 2.5rem;
+  border: none;
+  border-radius: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.03rem;
+  font-size: 0.9rem;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #335576;
+}
+
+.recommendations__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 3rem;
+}
+.recommendations__text-container {
+  width: 100%;
+}
+.recommendations__text {
+  font-size: 1.4rem;
+  margin-right: 68vw;
+}
+
+.card {
+  width: 28%;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card__group {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+}
+.card__image {
+  width: 100%;
+  display: block;
+}
+.card__image-container {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.card__title {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.06rem;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  margin: 25px 10px;
+}
+.card__text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}/*# sourceMappingURL=main.css.map */

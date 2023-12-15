@@ -1,0 +1,243 @@
+$main: #335576;
+$dk: #000;
+$lt: #fff;
+$accent: #db7a4e;
+$bg-main: #fff;
+$bg-accent: #fefaf5;
+$med-dk: rgba(0,0,0,20%);
+$fw-reg: 400; 
+$fw-bold: 700;
+$fs-xxs: 0.6rem;
+$fs-xs: 0.8rem;
+$fs-sm: 0.85rem; 
+$fs-sm-med: 0.9rem;
+$fs-med: 1.1rem;
+$fs-med-lg: 1.4rem; 
+$fs-lg: 1.7rem; 
+$fs-xl: 2.25rem;
+$fs-xxl: 3.75rem;
+$fs-root: 16px;
+
+:root {
+    font-size: $fs-root;
+    color: $main;
+    font-weight: $fw-reg;
+    font-family: 'Verdana', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.site-container {
+    max-width: 1280px;
+    margin: 0;
+}
+
+ 
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    margin: 0 5rem;
+    &__list {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__item {
+        list-style-type: none;
+        font-size: $fs-sm;
+        margin-right: 1.1rem;
+    }
+    &__link {
+        text-decoration: none;
+        color: $dk;
+        font-size: $fs-sm;
+        &--active {
+            color: $accent;
+        &:after {
+            content: "";
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            padding-top: 0.5rem;
+            border-bottom: 2px solid $accent;
+        }}
+        &:hover {
+            color: $accent;
+        }
+    }
+    &__branding-link {
+        text-decoration: none;
+
+    }
+    &__branding-text {
+        text-decoration: none;
+        font-size: $fs-med;
+        color: $main;
+        padding: 0;
+        &:hover {
+            color: $accent;
+        }
+    }
+}
+
+.destination {
+    height: 650px;
+
+    background-size: cover;
+    background-position: center;
+    &--hawaii {
+        background-image: url('../assets/images/hawaii.jpg');
+    }
+    &--iceland {
+        background-image: url('../assets/images/iceland.jpg');
+    }
+    &--greece {
+        background-image: url('../assets/images/greece.jpg');
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem 3rem;
+    }
+    &__title-container {
+        width: 100%;
+    }
+    &__title {
+      font-size: $fs-xxl;
+      margin-right: 68vw; 
+      color: $lt;
+
+    }
+}
+
+.activity-card {
+    width: 30%;
+    border-radius: 5px;
+    border: 1px solid $med-dk;
+    box-shadow: 0 4px 4px $med-dk;
+    background-color: $bg-main;
+    transition: transform 0.5s;
+
+    &:hover {       
+        transform: scale(1.1);
+    }
+    &__container {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+    }
+    &__text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+
+    }
+    &__text-title {
+        border-bottom: 2px solid black;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    &__list-item {
+        list-style: none;
+        background-color: $bg-accent;
+        line-height: 40px;
+        margin: 10px;
+
+    }
+}
+
+.footer {
+    background-color: $bg-accent;
+    height: 12rem;
+    display: flex;
+    justify-content: space-between;
+    &__container {
+        margin: 2.5rem 4rem 3rem 13rem;
+        width: 68%;
+        display: flex;
+        justify-content: space-between;
+   } 
+}
+
+.contact {
+    &__container {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 3.75rem;
+        z-index: 99;
+        width: 100%;
+    }   
+    &__title {
+        font-size: $fs-med-lg;
+        margin-bottom: 1.9rem;
+    }    
+    &__sub-text {
+        font-size: $fs-xxs;
+        color: $accent;
+        text-transform: uppercase;
+    }
+    &__text {
+        font-size: $fs-xs;
+        margin: 0;
+    }
+}
+
+.hours {
+    width: 44%;
+    &__container {
+        display: flex;
+        flex-direction: column;     
+    }  
+    &__group {
+        display: flex;
+        justify-content: space-between;
+    } 
+    &__details {
+        display: flex;
+        flex-direction: column;
+    }  
+    &__title {
+        font-size: $fs-med-lg;
+    }    
+    &__sub-text {
+        font-size: $fs-xxs;
+        color: $accent;
+        text-transform: uppercase;
+
+    }
+    &__text {
+        font-size: $fs-sm;
+        margin: 0;
+    }
+
+}
+
+.social {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__image {
+        height: 1.4rem;
+        &:not(last-child) {
+            margin-right: 30px;
+        }}
+    &__title {
+        font-size: $fs-med-lg;
+        margin-bottom: 2.7rem;
+    }
+
+}
