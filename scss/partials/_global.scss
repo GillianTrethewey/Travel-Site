@@ -40,8 +40,12 @@ $fs-root: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     z-index: 1;
-    margin: 0 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $bg-main;
     &__list {
         display: flex;
         justify-content: space-around;
@@ -78,6 +82,7 @@ $fs-root: 16px;
         font-size: $fs-med;
         color: $main;
         padding: 0;
+        margin-left: 6rem;
         &:hover {
             color: $accent;
         }
