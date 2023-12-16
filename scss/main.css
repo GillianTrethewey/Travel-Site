@@ -39,18 +39,15 @@
   color: #000;
   font-size: 0.85rem;
 }
-.nav__link--active {
-  color: #db7a4e;
-}
 .nav__link--active:after {
   content: "";
   display: block;
   margin: 0 auto;
   width: 100%;
   padding-top: 0.5rem;
-  border-bottom: 2px solid #db7a4e;
+  border-bottom: 2.5px solid #db7a4e;
 }
-.nav__link:hover {
+.nav:hover {
   color: #db7a4e;
 }
 .nav__branding-link {
@@ -88,7 +85,7 @@
   width: 100%;
 }
 .contact__title {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin-bottom: 1.9rem;
 }
 .contact__sub-text {
@@ -117,7 +114,7 @@
   flex-direction: column;
 }
 .hours__title {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 .hours__sub-text {
   font-size: 0.6rem;
@@ -140,13 +137,14 @@
   margin-right: 30px;
 }
 .social__title {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin-bottom: 2.7rem;
 }
 
 .hero {
   display: flex;
   background-color: #fefaf5;
+  height: 510px;
 }
 .hero__container {
   margin: 6rem;
@@ -157,14 +155,17 @@
   display: flex;
   flex-direction: column;
   width: 50%;
+  margin-top: 1rem;
 }
 .hero__title {
   font-size: 2.25rem;
+  margin-bottom: 20px;
 }
 .hero__text {
   font-size: 0.85rem;
   line-height: 1.5;
   margin-bottom: 2rem;
+  margin-top: 0;
 }
 .hero__graphics {
   width: 40%;
@@ -191,14 +192,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2rem 3rem;
+  margin: 2em 3rem;
 }
 .recommendations__text-container {
   width: 100%;
 }
 .recommendations__text {
-  font-size: 1.4rem;
-  margin-right: 68vw;
+  font-size: 1.3rem;
+  letter-spacing: 0.025rem;
+  margin: 0;
 }
 
 .card {
@@ -216,6 +218,7 @@
   justify-content: space-around;
   align-items: center;
   width: 80%;
+  padding: 2rem;
 }
 .card__image {
   width: 100%;
@@ -228,13 +231,13 @@
 }
 .card__title {
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 700;
   letter-spacing: 0.06rem;
   position: absolute;
-  bottom: 0;
+  bottom: -8px;
   right: 10px;
-  margin: 25px 10px;
+  margin: 1.3rem 0.625rem;
 }
 .card__text-container {
   display: flex;

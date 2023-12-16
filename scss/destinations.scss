@@ -1,7 +1,7 @@
 @use './partials/_global.scss' as *;
 
 .destination {
-    height: 650px;
+    height: 40.625rem;
 
     background-size: cover;
     background-position: center;
@@ -22,6 +22,7 @@
     }
     &__title-container {
         width: 100%;
+        margin-top: 30px;
     }
     &__title {
       font-size: $fs-xxl;
